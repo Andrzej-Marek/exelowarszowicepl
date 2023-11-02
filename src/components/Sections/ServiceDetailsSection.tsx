@@ -14,7 +14,7 @@ const services = [
     description:
       "Nasza usługa mechaniki samochodowej to gwarancja, że Twój pojazd będzie działać sprawnie i bezpiecznie.",
     buttonText: "Sprawdź",
-    href: "/",
+    href: "/uslugi/mechanika",
   },
   {
     backText: "BMW",
@@ -26,7 +26,7 @@ const services = [
     description:
       " Wykonujemy kompleksową wymianę rozrządów w samochodach marki BMW, zapewniając doskonałą wydajność i niezawodność Twojego pojazdu.",
     buttonText: "Sprawdź",
-    href: "/",
+    href: "/uslugi/rozrzady-bmw",
   },
   {
     image: {
@@ -38,7 +38,7 @@ const services = [
     description:
       "Serwisujemy, naprawiamy i montujemy, układy klimatyzacji w większości typach pojazdów.",
     buttonText: "Sprawdź",
-    href: "/",
+    href: "/uslugi/klimatyzacja",
   },
   {
     image: {
@@ -50,7 +50,7 @@ const services = [
     description:
       "Nasze usługi elektryki samochodowej to klucz do utrzymania bezpiecznych i sprawnych układów elektrycznych w Twoim aucie.",
     buttonText: "Sprawdź",
-    href: "/",
+    href: "/uslugi/elektryka",
   },
   {
     image: {
@@ -62,7 +62,7 @@ const services = [
     description:
       "Zainstalujemy i serwisujemy efektywne ogrzewanie postojowe, zapewniając Ci ciepło i wygodę w zimowe dni.",
     buttonText: "Sprawdź",
-    href: "/",
+    href: "/uslugi/ogrzewania-postojowe",
   },
 ];
 const ServiceDetailsSection = ({}: ServiceDetailsSectionProps) => {
