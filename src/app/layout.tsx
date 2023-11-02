@@ -26,6 +26,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" data-bs-theme="dark">
+      {/* <head>
+        <link rel="icon" href="/favicon.svg" sizes="any" />
+      </head> */}
       <body className={inter.className}>
         <Header />
         <div className="page_wrapper">{children}</div>

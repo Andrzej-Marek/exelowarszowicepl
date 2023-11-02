@@ -20,7 +20,7 @@ const Accordion = ({ items }: AccordionProps) => {
               type="button"
               data-bs-toggle="collapse"
               data-bs-target={`#collapse-${index}`}
-              aria-expanded="true"
+              aria-expanded="false"
               aria-controls="collapseOne"
             >
               {item.title}

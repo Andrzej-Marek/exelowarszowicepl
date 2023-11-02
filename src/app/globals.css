@@ -16,3 +16,16 @@
   max-width: 100%;
   height: auto;
 }
+
+.element-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  gap: 12px;
+}
+
+@media screen and (min-width: 575px) {
+  .element-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}

@@ -19,7 +19,7 @@ export const navLinks: Record<
   },
   services: {
     label: "Usługi",
-    href: "#services",
+    href: "/#services",
     children: [
       {
         label: "Mechanika",
@@ -45,10 +45,10 @@ export const navLinks: Record<
   },
   howItsWorks: {
     label: "Jak to działa?",
-    href: "#how-to-schedule-service",
+    href: "/#how-to-schedule-service",
   },
   contact: {
     label: "Kontakt",
-    href: "#contact",
+    href: "/#contact",
   },
 };

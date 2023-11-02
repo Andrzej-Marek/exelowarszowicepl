@@ -19,6 +19,7 @@ module.exports = {
         content: [
           "./src/app/**/*.{js,jsx,ts,tsx}",
           "./src/components/**/*.{js,jsx,ts,tsx}",
+          "./src/skeletons/**/*.{js,jsx,ts,tsx}",
         ],
         defaultExtractor: (content) => content.match(/[\w-/:]+(?<!:)/g) || [],
         safelist: ["html", "body"],

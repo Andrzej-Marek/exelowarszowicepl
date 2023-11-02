@@ -7,7 +7,7 @@ const KlimatyzacjaPage = () => {
       data={{
         routeThree: [
           { href: "/", label: "Strona Główna" },
-          { href: "Usługi", label: "Usługi" },
+          { href: "/uslugi", label: "Usługi" },
           { href: "/uslugi/klimatyzacja", label: "Klimatyzacja" },
         ],
         title: "Klimatyzacja",
