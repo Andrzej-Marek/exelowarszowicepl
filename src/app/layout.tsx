@@ -39,9 +39,6 @@ export default function RootLayout({
         `}
       </Script>
 
-      {/* <head>
-        <link rel="icon" href="/favicon.svg" sizes="any" />
-      </head> */}
       <body className={inter.className}>
         <Header />
         <div className="page_wrapper">{children}</div>
