@@ -120,7 +120,7 @@ export const metadata: Metadata = {
       "Nasza usługa mechanika to gwarancja fachowej obsługi i profesjonalnych napraw samochodów. Dbałość o szczegóły, dokładność i stała komunikacja z naszą firmą to nasze priorytety.",
     type: "website",
     url: "https://exelowarszowice.pl/uslugi/mechanika",
-    //   image: "https://www.example.com/images/mechanik.jpg",
+    //   image: "https://exelowarszowice.pl/images/mechanik.jpg",
   },
 
   // twitter: {
@@ -128,7 +128,7 @@ export const metadata: Metadata = {
   //   site: "@exelo_autoservice",
   //   title: "Usługa Mechanika | Profesjonalny Serwis Mechaniczny EXELO",
   //   description: "Nasza usługa mechanika to gwarancja fachowej obsługi i profesjonalnych napraw samochodów. Dbałość o szczegóły, dokładność i stała komunikacja z naszą firmą to nasze priorytety.",
-  //   image: "https://www.example.com/images/mechanik.jpg",
+  //   image: "https://exelowarszowice.pl/images/mechanik.jpg",
   // }
 };
 

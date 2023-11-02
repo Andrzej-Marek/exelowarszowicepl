@@ -76,26 +76,17 @@ const MechanikaPage = () => {
 };
 
 export const metadata: Metadata = {
-  title: "Usługa Mechanika | Profesjonalny Serwis Mechaniczny EXELO",
+  title: "Elektryka Samochodowa | Profesjonalny Serwis Mechaniczny EXELO",
   description:
-    "Nasza usługa mechanika to gwarancja fachowej obsługi i profesjonalnych napraw samochodów. Dbałość o szczegóły, dokładność i stała komunikacja z naszą firmą to nasze priorytety.",
+    "Nasza usługa elektryki samochodowej to gwarancja fachowej obsługi i profesjonalnych napraw systemów elektrycznych w Twoim pojeździe. Dbałość o szczegóły, dokładność i stała komunikacja z naszą firmą to nasze priorytety.",
 
   openGraph: {
-    title: "Usługa Mechanika | Profesjonalny Serwis Mechaniczny EXELO",
+    title: "Elektryka Samochodowa | Profesjonalny Serwis Mechaniczny EXELO",
     description:
-      "Nasza usługa mechanika to gwarancja fachowej obsługi i profesjonalnych napraw samochodów. Dbałość o szczegóły, dokładność i stała komunikacja z naszą firmą to nasze priorytety.",
+      "Nasza usługa elektryki samochodowej to gwarancja fachowej obsługi i profesjonalnych napraw systemów elektrycznych w Twoim pojeździe. Dbałość o szczegóły, dokładność i stała komunikacja z naszą firmą to nasze priorytety.",
     type: "website",
-    url: "https://exelowarszowice.pl/uslugi/mechanika",
-    //   image: "https://www.example.com/images/mechanik.jpg",
+    url: "https://exelowarszowice.pl/uslugi/elektryka",
   },
-
-  // twitter: {
-  //   card: "summary_large_image",
-  //   site: "@exelo_autoservice",
-  //   title: "Usługa Mechanika | Profesjonalny Serwis Mechaniczny EXELO",
-  //   description: "Nasza usługa mechanika to gwarancja fachowej obsługi i profesjonalnych napraw samochodów. Dbałość o szczegóły, dokładność i stała komunikacja z naszą firmą to nasze priorytety.",
-  //   image: "https://www.example.com/images/mechanik.jpg",
-  // }
 };
 
 export default MechanikaPage;

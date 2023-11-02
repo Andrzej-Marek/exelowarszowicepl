@@ -119,8 +119,8 @@ export const metadata: Metadata = {
     description:
       "Nasza usługa serwisu i montażu ogrzewań postojowych to klucz do komfortu i wygody podczas zimowych podróży. Oferujemy montaż, serwis oraz naprawy ogrzewań postojowych w różnych markach samochodów. Dowiedz się więcej o naszych usługach.",
     type: "website",
-    url: "https://www.example.com/uslugi/ogrzewania-postojowe",
-    // image: "https://www.example.com/images/ogrzewanie-postojowe.jpg",
+    url: "https://exelowarszowice.pl/uslugi/ogrzewania-postojowe",
+    // image: "https://exelowarszowice.pl/images/ogrzewanie-postojowe.jpg",
   },
 
   // twitter: {
@@ -128,7 +128,7 @@ export const metadata: Metadata = {
   //   site: "@exelo_autoservice",
   //   title: "Serwis i Montaż Ogrzewań Postojowych | Profesjonalna Usługa w Serwisie Samochodowym EXELO",
   //   description: "Nasza usługa serwisu i montażu ogrzewań postojowych to klucz do komfortu i wygody podczas zimowych podróży. Oferujemy montaż, serwis oraz naprawy ogrzewań postojowych w różnych markach samochodów. Dowiedz się więcej o naszych usługach.",
-  //   image: "https://www.example.com/images/ogrzewanie-postojowe.jpg",
+  //   image: "https://exelowarszowice.pl/images/ogrzewanie-postojowe.jpg",
   // }
 };
 

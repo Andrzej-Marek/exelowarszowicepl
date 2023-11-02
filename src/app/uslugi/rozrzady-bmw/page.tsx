@@ -196,7 +196,7 @@ export const metadata: Metadata = {
       "Zadbaj o sprawność swojego BMW. Oferujemy profesjonalną usługę wymiany rozrządów. Długotrwałe i bezpieczne rozwiązania w warsztacie EXELO.",
     type: "website",
     url: "https://exelowarszowice.pl/usligi/rozrzady-bmw",
-    // image: "https://www.example.com/images/bmw-rozrzad.jpg",
+    // image: "https://exelowarszowice.pl/images/bmw-rozrzad.jpg",
   },
 
   // twitter: {
@@ -204,7 +204,7 @@ export const metadata: Metadata = {
   //   site: "@exelo_autoservice",
   //   title: "Wymiana Rozrządów BMW | Profesjonalny Serwis EXELO",
   //   description: "Zadbaj o sprawność swojego BMW. Oferujemy profesjonalną usługę wymiany rozrządów. Długotrwałe i bezpieczne rozwiązania w warsztacie EXELO.",
-  //   image: "https://www.example.com/images/bmw-rozrzad.jpg",
+  //   image: "https://exelowarszowice.pl/images/bmw-rozrzad.jpg",
   // }
 };
 
