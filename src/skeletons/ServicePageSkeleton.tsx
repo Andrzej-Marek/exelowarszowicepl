@@ -69,6 +69,7 @@ const ServicePageSkeleton = ({ data }: ServicePageSkeletonProps) => {
             <div className="col-lg-8">
               <div className="details_image">
                 <Image
+                  quality={70}
                   className="service-image"
                   width={1786}
                   height={778}
@@ -127,9 +128,11 @@ const DescriptionPoints = ({ points }: { points: string[] }) => {
         {points.map((point, index) => (
           <li key={index}>
             <span className="info_icon ">
-              <img
+              <Image
                 src="/assets/images/icons/icon_square.svg"
                 alt="ProMotors - Icon Square"
+                width={9}
+                height={9}
               />
             </span>
             <span className="info_text">{point}</span>
