@@ -12,6 +12,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Script from "next/script";
 import FacebookPixel from "@/lib/FacebookPixel";
+import { Suspense } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -37,7 +38,6 @@ export default function RootLayout({
          gtag('config', 'G-CDTGQFP7XH')
         `}
       </Script>
-      <FacebookPixel />
 
       {/* <head>
         <link rel="icon" href="/favicon.svg" sizes="any" />
@@ -46,6 +46,10 @@ export default function RootLayout({
         <Header />
         <div className="page_wrapper">{children}</div>
         <Footer />
+
+        <Suspense fallback={null}>
+          <FacebookPixel />
+        </Suspense>
       </body>
     </html>
   );

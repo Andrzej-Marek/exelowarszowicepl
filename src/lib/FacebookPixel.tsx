@@ -1,12 +1,7 @@
-import { useEffect } from "react";
-import { useRouter } from "next/router";
+"use client";
+import { useEffect, useState } from "react";
 import Script from "next/script";
-
-const handleRouteChange = () => {
-  pageview();
-};
-
-const FB_PIXEL_ID = process.env.NEXT_PUBLIC_FACEBOOK_PIXEL_ID;
+import { usePathname, useSearchParams } from "next/navigation";
 
 const pageview = () => {
   // @ts-ignore
@@ -17,18 +12,19 @@ const pageview = () => {
 };
 
 const FacebookPixel = () => {
-  const router = useRouter();
+  const [loaded, setLoaded] = useState(false);
+
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
 
   useEffect(() => {
+    if (!loaded) return;
     // the below will only fire on route changes (not initial load - that is handled in the script below)
-    router.events.on("routeChangeComplete", handleRouteChange);
-    return () => {
-      router.events.off("routeChangeComplete", handleRouteChange);
-    };
-  }, [router.events]);
+    pageview();
+  }, [pathname, searchParams]);
 
   return (
-    <Script id="facebook-pixel">
+    <Script id="facebook-pixel" onLoad={() => setLoaded(true)}>
       {`
         !function(f,b,e,v,n,t,s)
         {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
