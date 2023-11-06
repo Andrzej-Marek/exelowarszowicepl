@@ -34,7 +34,7 @@ const ContactForm = ({}: ContactFormSectionProps) => {
   const onSubmit: SubmitHandler<FormModel> = async (data) => {
     try {
       const response = await fetch(
-        "http://localhost:3000/api/contact-request",
+        "https://exelo-warszowice.pl/api/contact-request",
         {
           method: "POST",
           body: JSON.stringify(data),
