@@ -111,6 +111,30 @@
   --bs-box-shadow: 0 30px 50px 0 rgba(18, 18, 18, 0.2);
 }
 
+/* CUSTOM */
+
+.alert {
+  padding: 15px 20px;
+  border-radius: 12px;
+  color: #000;
+}
+
+.alert-info {
+  background-color: #e3edf8;
+  border: 1px solid #0068da;
+}
+
+.alert-success {
+  background-color: #ebf7ee;
+  border: 1px solid #37b259;
+}
+
+.alert-error {
+  background-color: #fbedea;
+  border: 1px solid #ec4e2b;
+}
+
+/* END CUSTOM */
 /* 1.1 - Template Fonts - Start
 ================================================== */
 /* 1.1 - Template Fonts - End

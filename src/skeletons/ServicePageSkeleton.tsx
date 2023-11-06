@@ -1,5 +1,6 @@
 import Accordion, { AccordionProps } from "@/components/Accordion";
 import AsideContactSection from "@/components/Sections/AsideContactSection";
+import ContactFormSection from "@/components/Sections/ContactFormSection";
 import PortfolioSection, {
   PortfolioSectionProps,
 } from "@/components/Sections/PortfolioSection";
@@ -102,6 +103,12 @@ const ServicePageSkeleton = ({ data }: ServicePageSkeletonProps) => {
         </div>
         {data.portfolio && <PortfolioSection {...data.portfolio} />}
       </section>
+
+      <ContactFormSection
+        backText="Masz pytania?"
+        title="Skontaktuj się z nami"
+        description=" Jesteśmy tu po to, aby Ci pomóc. Dlatego na wszelkie pytania odpowiadamy jak najszybciej to możliwe."
+      />
     </main>
   );
 };

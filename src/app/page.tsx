@@ -1,4 +1,5 @@
 import ContactDetailsSection from "@/components/Sections/ContactDetailsSection";
+import ContactFormSection from "@/components/Sections/ContactFormSection";
 import CounterSection from "@/components/Sections/CounterSection";
 import ServiceDetailsSection from "@/components/Sections/ServiceDetailsSection";
 import WorkProcessSection from "@/components/Sections/WorkProcessSection";
@@ -15,8 +16,13 @@ export default function Home() {
       {/* <ServiceSection /> */}
       <ServiceDetailsSection />
       <WorkProcessSection />
+
       <ContactDetailsSection />
-      {/* <ContactFormSection /> */}
+      <ContactFormSection
+        backText="Masz pytania?"
+        title="Skontaktuj się z nami"
+        description=" Jesteśmy tu po to, aby Ci pomóc. Dlatego na wszelkie pytania odpowiadamy jak najszybciej to możliwe."
+      />
     </main>
   );
 }

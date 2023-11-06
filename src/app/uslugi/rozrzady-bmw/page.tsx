@@ -1,5 +1,3 @@
-import PortfolioSection from "@/components/Sections/PortfolioSection";
-import { navLinks } from "@/router/navLinks";
 import ServicePageSkeleton from "@/skeletons/ServicePageSkeleton";
 import { Metadata } from "next";
 
