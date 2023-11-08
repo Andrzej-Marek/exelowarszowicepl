@@ -1,9 +1,11 @@
 import NotFound from "@/components/NotFound";
 import EstimatePageSkeleton from "@/skeletons/EstimatePageSkeleton";
+import { Metadata } from "next";
 
 const getData = async (estimateId: string) => {
   const response = await fetch(
-    `https://cms.exelo-warszowice.pl/api/estimate/${estimateId}?locale=undefined&draft=false&depth=1`
+    `https://cms.exelo-warszowice.pl/api/estimate/${estimateId}?locale=undefined&draft=false&depth=1`,
+    { cache: "no-store" }
   );
 
   const data = await response.json();
@@ -32,3 +34,17 @@ const EstimatePage = async ({
 };
 
 export default EstimatePage;
+
+export const metadata: Metadata = {
+  title: "Wycena Usługi | Serwis Samochodowy EXELO",
+  description:
+    "Zaplanuj koszty serwisu swojego samochodu. Oferujemy wycenę usług mechanicznych, elektrycznych, klimatyzacji, wymiany rozrządów i innych. Sprawdź, ile może kosztować naprawa lub serwis Twojego pojazdu.",
+  openGraph: {
+    title: "Wycena Usługi | Serwis Samochodowy EXELO",
+    description:
+      "Zaplanuj koszty serwisu swojego samochodu. Oferujemy wycenę usług mechanicznych, elektrycznych, klimatyzacji, wymiany rozrządów i innych. Sprawdź, ile może kosztować naprawa lub serwis Twojego pojazdu.",
+    type: "website",
+    url: "https://www.example.com/wycena-uslug",
+    // image: "https://www.example.com/images/wycena.jpg",
+  },
+};
