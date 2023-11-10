@@ -1,35 +1,30 @@
-const WorkProcessSection = () => {
+const EstimateProcessSection = () => {
   return (
     <section
-      className="workprocess_section section_space_lg"
+      className="workprocess_section section_space_sm"
       id="how-to-schedule-service"
     >
       <div className="container">
         <div className="row">
-          <div className="col-lg-4">
+          <div className="col-lg-12">
             <div className="section_heading pe-lg-5">
               <h2 className="heading_text wow" data-splitting>
-                Jak wygląda proces serwisu?
+                Jak wyglądają kolejne kroki?
               </h2>
-              <p className="heading_description mb-0">
-                Cały proces serwisu w naszym warsztacie to prosta i skuteczna
-                droga do utrzymania Twojego samochodu w doskonałym stanie. Od
-                rezerwacji terminu po odbiór gotowego pojazdu - zapewniamy pełną
-                profesjonalność i troskę o Twój komfort jazdy.
-              </p>
             </div>
           </div>
-          <div className="col-lg-8">
+          <div className="col-lg-12">
             <div className="row">
               <div className="col-md-6 col-sm-6">
                 <div className="workprocess_item">
                   <h3 className="item_title">
                     <span className="serial_number">01</span>
-                    <span className="title_text">Rezerwacja Terminu</span>
+                    <span className="title_text">Akceptacja Wyceny</span>
                   </h3>
                   <p className="mb-0">
-                    Zarezerwuj dogodny termin serwisu online lub telefonicznie,
-                    dostosowany do Twojego harmonogramu.
+                    Po otrzymaniu wyceny, zdecyduj, czy akceptujesz
+                    przedstawione warunki. W przypadku zgody, przechodzisz do
+                    następnego etapu procesu.
                   </p>
                 </div>
               </div>
@@ -37,12 +32,14 @@ const WorkProcessSection = () => {
                 <div className="workprocess_item">
                   <h3 className="item_title">
                     <span className="serial_number">02</span>
-                    <span className="title_text">Profesjonalna Diagnoza</span>
+                    <span className="title_text">
+                      Umówienie Terminu Serwisu
+                    </span>
                   </h3>
                   <p className="mb-0">
-                    Nasi doświadczeni mechanicy dokładnie zdiagnozują problemy
-                    Twojego samochodu, zapewniając kompleksową analizę stanu
-                    technicznego.
+                    Umów dogodny termin serwisu. Staramy się dostosować do
+                    Twojego planu, abyś mógł/a spokojnie przekazać nam swoje
+                    auto.
                   </p>
                 </div>
               </div>
@@ -50,11 +47,14 @@ const WorkProcessSection = () => {
                 <div className="workprocess_item">
                   <h3 className="item_title">
                     <span className="serial_number">03</span>
-                    <span className="title_text">Akceptacja Wyceny</span>
+                    <span className="title_text">
+                      Podstawienie Samochodu na Serwis
+                    </span>
                   </h3>
                   <p className="mb-0">
-                    Po dokładnej diagnozie otrzymasz klarowną wycenę naprawy.
-                    Zaakceptuj ją, abyśmy mogli rozpocząć pracę.
+                    Przyjedź do naszego serwisu zgodnie z umówionym terminem, a
+                    my zajmiemy się resztą. Możesz być pewien/cią, że Twój
+                    samochód jest w dobrych rękach.
                   </p>
                 </div>
               </div>
@@ -62,11 +62,12 @@ const WorkProcessSection = () => {
                 <div className="workprocess_item">
                   <h3 className="item_title">
                     <span className="serial_number">04</span>
-                    <span className="title_text">Odbiór Gotowego Pojazdu</span>
+                    <span className="title_text">Odbiór Samochodu</span>
                   </h3>
                   <p className="mb-0">
-                    Po udanej naprawie lub konserwacji odbierz swój samochód w
-                    doskonałym stanie technicznym i gotowy do jazdy.
+                    Po zakończeniu prac serwisowych, poinformujemy Cię o
+                    gotowości samochodu. Przyjedź, aby odebrać swoje auto, które
+                    będzie gotowe do bezpiecznej jazdy.
                   </p>
                 </div>
               </div>
@@ -78,4 +79,4 @@ const WorkProcessSection = () => {
   );
 };
 
-export default WorkProcessSection;
+export default EstimateProcessSection;

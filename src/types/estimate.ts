@@ -8,7 +8,8 @@ export type Estimate = {
   engineDetails?: string;
   steering?: "LEFT" | "RIGHT";
   drive?: "AWD" | "RWD" | "FWD";
-  description?: string;
+  description?: any;
+  description_html?: string;
   total: number;
   estimate: Array<{ name: string; make: string; price: number }>;
 };

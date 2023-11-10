@@ -1,6 +1,6 @@
 import AsideContactSection from "@/components/Sections/AsideContactSection";
 import ContactFormSection from "@/components/Sections/ContactFormSection";
-
+import EstimateProcessSection from "@/components/estimate/EstimateProcessSection";
 import { Estimate, formatDrive, formatSteering } from "@/types/estimate";
 import { formatPrice } from "@/utils/formatPrice";
 
@@ -53,13 +53,32 @@ const EstimatePageSkeleton = ({ estimate }: ServicePageSkeletonProps) => {
           <div className="row">
             <div className="col-lg-8">
               <div className="details_content">
-                <div>{estimate.description}</div>
+                {estimate.description_html && (
+                  <div
+                    dangerouslySetInnerHTML={{
+                      __html: estimate.description_html,
+                    }}
+                  />
+                )}
                 <EstimateTable data={estimate.estimate} />
-                <h4>RAZEM: {formatPrice(estimate.total)}</h4>
               </div>
+
+              <div className="details_content">
+                <i>
+                  {/* <div className="details_info_title">UWAGA!</div> */}
+                  Chcielibyśmy poinformować, że finalna cena naszych usług może
+                  się różnić w zależności od ewentualnych zmian podczas prac
+                  serwisowych. <br /> Zapewniamy pełną transparentność, a{" "}
+                  <strong>każdą </strong>
+                  modyfikację będziemy dokładnie omawiać z Państwem. Naszym
+                  celem jest zachowanie satysfakcji i zaufania naszych Klientów.
+                </i>
+              </div>
+              <EstimateProcessSection />
             </div>
+
             <div className="col-lg-4">
-              <AsideContactSection />
+              <AsideContactSection hideScheduleService />
             </div>
           </div>
         </div>
@@ -75,6 +94,7 @@ const EstimatePageSkeleton = ({ estimate }: ServicePageSkeletonProps) => {
 };
 
 const EstimateTable = ({ data }: { data: Estimate["estimate"] }) => {
+  const summary = data.reduce((acc, el) => acc + el.price, 0);
   return (
     <>
       <h3 className="details_info_title">Wycena</h3>
@@ -83,7 +103,7 @@ const EstimateTable = ({ data }: { data: Estimate["estimate"] }) => {
           <thead>
             <tr>
               <th scope="col">Nazwa</th>
-              <th scope="col">Marka</th>
+              {/* <th scope="col">Marka</th> */}
               <th scope="col">Cena</th>
             </tr>
           </thead>
@@ -91,13 +111,14 @@ const EstimateTable = ({ data }: { data: Estimate["estimate"] }) => {
             {data.map((el, index) => (
               <tr key={index}>
                 <td scope="row">{el.name}</td>
-                <td>{el.make}</td>
+                {/* <td>{el.make}</td> */}
                 <td>{formatPrice(el.price)}</td>
               </tr>
             ))}
           </tbody>
         </table>
       </div>
+      <div className="order_summary">RAZEM: {formatPrice(summary)}</div>
     </>
   );
 };

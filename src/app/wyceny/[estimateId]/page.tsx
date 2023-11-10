@@ -23,6 +23,7 @@ const EstimatePage = async ({
   params: { estimateId: string };
 }) => {
   const data = await getData(estimateId);
+
   if (!data) {
     return (
       <div className="container section_space_lg">
