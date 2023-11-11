@@ -6321,7 +6321,7 @@ Responsive For Mobile & Tablet Devices
   }
   /* purgecss end ignore */
   .sidebar {
-    padding-top: 50px;
+    /* padding-top: 20px; */
   }
   .details_info_title {
     font-size: 24px;

@@ -12,7 +12,7 @@ const ContactFormSection = ({
   title,
 }: ContactFormSectionProps) => {
   return (
-    <section className="appointment_form_section section_space_sm">
+    <section className="appointment_form_section ">
       <div className="container">
         <div className="row">
           <div className="col-lg-7">
