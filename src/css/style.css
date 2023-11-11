@@ -4964,6 +4964,10 @@ blockquote .quote_content {
 ================================================== */
 /* 4.2 - Site Footer - Start
 ================================================== */
+.site_footer {
+  overflow: hidden;
+}
+
 .site_footer p {
   margin-bottom: 25px;
 }
@@ -6310,7 +6314,7 @@ Responsive For Mobile & Tablet Devices
     margin-bottom: 20px;
   }
   .footer_content_area .row {
-    margin: -25px;
+    /* margin: -25px; */
   }
   .footer_content_area [class*="col-"] {
     padding: 25px;

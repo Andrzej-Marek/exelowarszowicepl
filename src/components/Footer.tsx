@@ -7,7 +7,7 @@ type FooterProps = {};
 const Footer = ({}: FooterProps) => {
   return (
     <footer className="site_footer">
-      <div className="footer_content_area section_space_lg bg_gray_dark">
+      <div className="footer_content_area section_space_sm bg_gray_dark">
         <div className="container">
           <div className="row">
             <div className="col-lg-3 col-md-6 col-sm-6">
