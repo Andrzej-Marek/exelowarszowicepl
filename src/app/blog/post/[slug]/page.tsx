@@ -1,4 +1,4 @@
-import { Metadata, ResolvingMetadata } from "next";
+import { Metadata } from "next";
 import BlogPostSidePanel from "./components/BlogPostSidePanel";
 import { BlogPost } from "./types";
 import NotFound from "@/components/NotFound";
@@ -13,7 +13,6 @@ const getData = async (slug: string): Promise<BlogPost | null> => {
     buildCMSUrl(
       `/api/blog-posts/slug/${slug}?locale=undefined&draft=false&depth=1`
     )
-    // { cache: "no-store" }
   );
 
   const data = await response.json();

@@ -1,10 +1,13 @@
 import NotFound from "@/components/NotFound";
 import EstimatePageSkeleton from "@/skeletons/EstimatePageSkeleton";
+import { buildCMSUrl } from "@/utils/buildCMSUrl";
 import { Metadata } from "next";
 
 const getData = async (estimateId: string) => {
   const response = await fetch(
-    `https://cms.exelo-warszowice.pl/api/estimate/${estimateId}?locale=undefined&draft=false&depth=1`,
+    buildCMSUrl(
+      `/api/estimate/${estimateId}?locale=undefined&draft=false&depth=1`
+    ),
     { cache: "no-store" }
   );
 
