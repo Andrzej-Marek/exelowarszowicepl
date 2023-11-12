@@ -62,11 +62,11 @@ const ImageBlock = ({ block }: { block: ImageBlock }) => {
 
   return (
     <div className="details_image">
-      <Image
+      <img
         alt={block.file.alt}
         src={buildCMSUrl(block.file.url) ?? ""}
-        width={1786}
-        height={900}
+        // width={1786}
+        // height={900}
       />
     </div>
   );
