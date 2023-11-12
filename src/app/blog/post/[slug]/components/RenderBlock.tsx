@@ -12,8 +12,7 @@ import { ListItemNode, ListNode } from "@lexical/list";
 import { BlogPost, ColumnsBlock, ImageBlock, RichTextBlock } from "../types";
 import { TextNode } from "lexical";
 import Image from "next/image";
-import { block } from "sharp";
-import { buildUrl } from "@/utils/buildUrl";
+import { buildCMSUrl } from "@/utils/buildCMSUrl";
 
 type BlogContentProps = {
   blocks: BlogPost["blocks"];
@@ -65,7 +64,7 @@ const ImageBlock = ({ block }: { block: ImageBlock }) => {
     <div className="details_image">
       <Image
         alt={block.file.alt}
-        src={buildUrl(block.file.url) ?? ""}
+        src={buildCMSUrl(block.file.url) ?? ""}
         width={1786}
         height={900}
       />

@@ -4,7 +4,7 @@ import { BlogPost } from "./types";
 import NotFound from "@/components/NotFound";
 import { buildCMSUrl } from "@/utils/buildCMSUrl";
 import dayjs from "dayjs";
-import RenderBlock from "./components/BlogContent";
+import RenderBlock from "./components/RenderBlock";
 import "dayjs/locale/pl";
 import ContactFormSection from "@/components/Sections/ContactFormSection";
 
